@@ -7,7 +7,8 @@ public class Reader {
     private int dateOfBirth;
     private int phoneNumber;
 
-    public Reader(String fullName, int libraryCardNumber, String faculty, int dateOfBirth, int phoneNumber) {
+    public Reader(String fullName, int libraryCardNumber,
+                  String faculty, int dateOfBirth, int phoneNumber) {
         this.fullName = fullName;
         this.libraryCardNumber = libraryCardNumber;
         this.faculty = faculty;
@@ -36,7 +37,8 @@ public class Reader {
     }
 
     public void returnBook(Book... book) {
-        System.out.println(fullName + " вернул книг(и): " + Arrays.asList(book));
+        System.out.println(fullName +
+                " вернул книг(и): " + Arrays.asList(book));
     }
 
     @Override
